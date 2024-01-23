@@ -141,7 +141,7 @@ public class RelaySignerVerticle extends AbstractVerticle {
                                 Bytes payload = Bytes.fromHexString(FunctionEncoder.encode(relayMetaTransactionCall));
                                 Transaction relayHubTransaction = new Transaction(
                                     UInt256.fromHexString(getTransactionCount.getString("result")),
-                                    Wei.valueOf(0xFFFFFL),
+                                    Wei.valueOf(0),
                                     Gas.valueOf(0xFFFFFFFFFFL),
                                     relayHubAddress,
                                     Wei.valueOf(0),
